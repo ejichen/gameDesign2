@@ -2,7 +2,7 @@
 <!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
 <html>
 <head>
-<title>TODO:Title For Your Game</title>
+<title>Seven Segments</title>
 <!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
 <style>
 body {
@@ -15,6 +15,7 @@ body {
 	text-align:center;
 }
 .figure > img {
+
 	margin: 0px 20px;
 	image-rendering: pixelated;
 }
@@ -50,26 +51,47 @@ p {
 </style>
 </head>
 <body>
-<h1>TODO: Title For Your Game</h1>
-<div id="author">by: TODO Your Name (TODO your andrewid)</div>
-<p>TODO: one-sentence summary of your game, highlighting the unique "hook" of the game.</p>
+<h1>Seven Segments</h1>
+<div id="author">by: I-Chen Jwo (ijwo)</div>
+<p>Two players have to color the bar on the game board and try to connect the bars into numbers.
+	If the player successfully colored a full number, the player could get the score of that number.</p>
 <!-- the <div> wrapping this image centers it on the page. -->
 <!-- TODO: drawing showing the main view of the game during play -->
 <div class="figure">
-<img src="game.png" />
+<img src="game.png" width="25%";/>
+<img src="7seg.png" width="25%" />
 </div>
-<p>TODO: more information (2-3 sentences) about gameplay, referring to the image above.</p>
+<p>Two players have their own color (blue and red in this case) and they have to color the gray bar into their color.
+If the colored bars could form a number, the player gets the exact score. For instance,
+if the player successfully connected the gray bars into 6, the player could get 6 points.
+<ul>
+	<li>The player could get the score only if the number is fully formed by the player's color.</li>
+	<li>The colored bar could not be colored again. </li>
+	<li>0 also counts.</li>
+</ul>
+
+</p>
 
 <h2>Gameplay</h2>
-<p>TODO: Describe how the game starts, plays (e.g. what are the controls), and ends.</p>
+<p>There are two modes for this game. The player with higher score wins.
+<ul>
+	<li>Mode1: the players are only allowed to color one bar at the time
+and only one player is allowed to move at the time. Two players take turns until the board couldn't be colored anymore.</li>
+	<li>Mode2: the players are allowed to move unlimited moves in one minute or until the board is full.
+Also, Two players could play at the same time. </li>
+</ul>
+
+</p>
+
+<p>Notice: The number seven is too easy to connect, therefore the form of 7 is changed to a more complex form like the picure below. </p>
 <!-- TODO: illustrate your descriptions with more drawings -->
 <div class="figure">
-<img src="before-reset.png" />
-<img src="after-reset.png" />
+
+<img src="7.png" width="5%"; />
 </div>
 
 <h2>Assets</h2>
-<p>TODO: Provide a link to any preliminary 3D models, sounds, or <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">textures</a> for the game. Make sure to only link to assets with appropriate licenses.</p>
+<p>Still finding the <a href="https://github.com/ixchow/amoeba-escape/blob/master/tiles.png">assets</a> for the game.</p>
 
 </body>
 </html>
